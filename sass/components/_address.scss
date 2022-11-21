@@ -1,0 +1,28 @@
+.address__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.address {
+    margin-top: 20px;
+    display: flex;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address__str {
+    color: var(--text-color-on-dark-bg);
+}
+
+.address__link {
+    color: var(--addr-color);
+
+    transition: color var(--transitions-time) var(--transitions);
+
+    &:hover {
+        color: var(--interactive-color);
+    }
+}

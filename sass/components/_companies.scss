@@ -1,0 +1,40 @@
+.companies {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+}
+
+.companies__item {
+    width: 170px;
+    height: 92px;
+}
+
+.companies__link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--svg-default-color);
+
+    border: 1px solid var(--svg-default-color);
+    border-radius: 4px;
+
+    transition: color var(--transitions-time) var(--transitions),
+        border-color var(--transitions-time) var(--transitions);
+
+    &:hover,
+    &:focus {
+        color: var(--interactive-color);
+        border-color: var(--interactive-color);
+    }
+}
+
+.companies__icon {
+    fill: currentColor;
+
+    transition: fill var(--transitions-time) var(--transitions);
+}
